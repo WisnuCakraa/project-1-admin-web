@@ -1,0 +1,40 @@
+.wrap-dash {
+  background-color: #f1f1f1;
+  min-height: 28rem;
+}
+
+#wrapper.toggled {
+  padding-left: 270px;
+}
+
+.toggled#sidebar-wrapper {
+  width: 270px !important;
+  height: 100%;
+  left: 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -270px;
+
+  transition: all 0.5s ease;
+}
+
+.toggled#page-content-wrapper {
+  margin-left: 270px;
+  transition: all 0.5s ease;
+}
+
+@media only screen and (min-width: 992px) {
+  .toggled#page-content-wrapper {
+    width: calc(100% - 270px);
+  }
+}

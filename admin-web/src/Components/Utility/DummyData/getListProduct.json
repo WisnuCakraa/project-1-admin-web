@@ -1,0 +1,65 @@
+{
+  "response": {
+    "status": 200,
+    "data": {
+      "product": [
+        {
+          "id": "cad14d80-787e-4e48-a435-bd5810705067",
+          "type": "pintu",
+          "productName": "Pintu Alumunium",
+          "productCategory": "Dwijaya Pintu Alumunium",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "2e1873c7-45b1-4b90-87ee-84aabf432b12",
+          "type": "pintu",
+          "productName": "Pintu Garasi",
+          "productCategory": "Dwijaya Pintu Garasi",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "78d4acdf-882d-41e5-b96f-e29b87f4f26e",
+          "type": "railing",
+          "productName": "Railing Balkon",
+          "productCategory": "Dwijaya Railing Balkon",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "a532cb81-9fd2-48e6-80ce-46421befa962",
+          "type": "pintu",
+          "productName": "Pintu Tralis",
+          "productCategory": "Dwijaya Pintu Tralis",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "002d7a63-d102-4440-be59-d6619e7e1b1b",
+          "type": "railing",
+          "productName": "Railing Tangga",
+          "productCategory": "Dwijaya Railing Tangga",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "7b2a087f-6ada-41ec-982a-2ee7e50fae1a",
+          "type": "teralis",
+          "productName": "Teralis Jendela",
+          "productCategory": "Dwijaya Teralis Jendela",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "f6f2ddef-dc86-4060-9698-fbc6ee09297b",
+          "type": "teralis",
+          "productName": "Teralis Pintu",
+          "productCategory": "Dwijaya Teralis Pintu",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "pintu",
+          "productName": "Pintu Tralis",
+          "productCategory": "Dwijaya Pintu Tralis",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        }
+      ]
+    }
+  }
+}

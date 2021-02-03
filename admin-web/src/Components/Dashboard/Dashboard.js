@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
-import MainContent from "../MainContent/MainContent";
-import Card from "../Elements/Card/Card";
-import Table from "../Elements/Table/Table";
+import MainContent from "../MainContent";
+import Card from "../Elements/Card";
+import Table from "../Elements/Table";
 import { dataTable } from "../Utility/DummyData/dummy";
 import { getListProductJson } from "../Utility/DummyData";
 import "./Style.css";
 
 export default function Dashboard() {
+  const data = getListProductJson.response.data;
   const [listProduct, setListProduct] = useState([]);
 
-  useEffect(() => {});
+  useEffect(() => {
+    setListProduct(data.product);
+  });
 
   const _renderHeaderTable = [
     { id: "no", label: "No." },
@@ -35,16 +37,21 @@ export default function Dashboard() {
     );
   };
 
-  const renderList = dataTable.map((item, index) => {
-    return {
-      ...item,
-      no: index + 1,
-      productName: item.productName,
-      productCategory: item.productCategory,
-      descriptionProduct: item.descriptionProduct,
-      actions: _renderActions(item),
-    };
-  });
+  const renderList = listProduct
+    .filter((item) => {
+      return item.type === "pintu";
+    })
+    .map((item, index) => {
+      return {
+        ...item,
+        no: index + 1,
+        productName: item.productName,
+        productCategory: item.productCategory,
+        descriptionProduct: item.descriptionProduct,
+        actions: _renderActions(item),
+      };
+    });
+
   return (
     <MainContent>
       <div className="row">
@@ -62,7 +69,7 @@ export default function Dashboard() {
         </div>
         <Card />
         <Table
-          actionsEdit={_renderActions()}
+          // actionsEdit={_renderActions()}s
           bodyContent={renderList}
           headContent={_renderHeaderTable}
         />

@@ -21,6 +21,31 @@
   color: #c1c1c1 !important;
 }
 
+.drop-menu > li > a {
+  text-decoration: none;
+}
+
+.drop-menu > li > a:hover {
+  color: #fff !important;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 125, 221, 0.1),
+    rgba(59, 125, 221, 0.0875) 50%,
+    transparent
+  );
+}
+
+.drop-menu > li > a.active {
+  color: #e9ecef !important;
+  background: linear-gradient(
+    90deg,
+    rgba(59, 125, 221, 0.1),
+    rgba(59, 125, 221, 0.0875) 50%,
+    transparent
+  );
+  border-left: 4px solid #3b7ddd;
+}
+
 .sidebar-nav > li > a:hover {
   color: #fff !important;
   background: linear-gradient(

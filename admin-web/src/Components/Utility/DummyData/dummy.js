@@ -1,23 +1,30 @@
-export const dataTable = [
+export const dataFilter = [
   {
-    id: 1,
-    type: "pintu",
-    productName: "Pintu Alumunium",
-    productCategory: "Dwijaya Pintu Alumunium",
-    descriptionProduct: "Lorem Ipsum Dolor sit amet",
+    label: "Pilih Jenis Produk",
+    value: "",
   },
   {
-    id: 2,
-    type: "pintu",
-    productName: "Pintu Alumunium",
-    productCategory: "Dwijaya Pintu Alumunium",
-    descriptionProduct: "Lorem Ipsum Dolor sit amet",
+    label: "Pintu",
+    value: "pintu",
   },
   {
-    id: 3,
-    type: "pintu",
-    productName: "Pintu Alumunium",
-    productCategory: "Dwijaya Pintu Alumunium",
-    descriptionProduct: "Lorem Ipsum Dolor sit amet",
+    label: "Teralis",
+    value: "teralis",
+  },
+  {
+    label: "Railing",
+    value: "railing",
+  },
+  {
+    label: "Kaca & Kusen",
+    value: "kaca-kusen",
+  },
+  {
+    label: "Kontruksi Besi",
+    value: "kontruksi-besi",
+  },
+  {
+    label: "Kanopi",
+    value: "kanopi",
   },
 ];

@@ -18,17 +18,66 @@
           "descriptionProduct": "Lorem Ipsum Dolor sit amet"
         },
         {
-          "id": "78d4acdf-882d-41e5-b96f-e29b87f4f26e",
-          "type": "railing",
-          "productName": "Railing Balkon",
-          "productCategory": "Dwijaya Railing Balkon",
-          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
-        },
-        {
           "id": "a532cb81-9fd2-48e6-80ce-46421befa962",
           "type": "pintu",
           "productName": "Pintu Tralis",
           "productCategory": "Dwijaya Pintu Tralis",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "pintu",
+          "productName": "Pintu Tralis",
+          "productCategory": "Dwijaya Pintu Tralis",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "pintu",
+          "productName": "Pintu Pintu Alumunium",
+          "productCategory": "Dwijaya Pintu Alumunium",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "kanopi",
+          "productName": "Kanopi Spandek",
+          "productCategory": "Dwijaya Kanopi Spandek",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "kanopi",
+          "productName": "Kanopi Kaca Tempred",
+          "productCategory": "Dwijaya Kanopi Kaca Tempred",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "kanopi",
+          "productName": "Kanopi UPVC",
+          "productCategory": "Dwijaya Kanopi UPVC",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "kanopi",
+          "productName": "Kanopi Hollow Galvanis 4x6(single)",
+          "productCategory": "Dwijaya Kanopi Hollow Galvanis",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
+          "type": "kanopi",
+          "productName": "Kanopi Hollow Galvanis 4x6(single) / 4x8(double)",
+          "productCategory": "Dwijaya Kanopi Hollow Galvanis",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "78d4acdf-882d-41e5-b96f-e29b87f4f26e",
+          "type": "railing",
+          "productName": "Railing Balkon Kaca",
+          "productCategory": "Dwijaya Railing Balkon",
           "descriptionProduct": "Lorem Ipsum Dolor sit amet"
         },
         {
@@ -53,10 +102,17 @@
           "descriptionProduct": "Lorem Ipsum Dolor sit amet"
         },
         {
-          "id": "ca94893d-a8bb-4c6f-9360-832c38a89f91",
-          "type": "pintu",
-          "productName": "Pintu Tralis",
-          "productCategory": "Dwijaya Pintu Tralis",
+          "id": "7b2a087f-6ada-41ec-982a-2ee7e50fae1a",
+          "type": "kaca-kusen",
+          "productName": "Partisi Kaca / Sekat Riangan Kaca",
+          "productCategory": "Dwijaya Kaca / Kusen",
+          "descriptionProduct": "Lorem Ipsum Dolor sit amet"
+        },
+        {
+          "id": "f6f2ddef-dc86-4060-9698-fbc6ee09297b",
+          "type": "kontruksi",
+          "productName": "Kontruksi Besi Berat",
+          "productCategory": "Dwijaya Kontruksi Besi Berat",
           "descriptionProduct": "Lorem Ipsum Dolor sit amet"
         }
       ]

@@ -8,22 +8,22 @@ export default function Tabs(props) {
     return bodyContent.length > 0 ? (
       bodyContent.map((row, index) => (
         <tr key={index}>
-          {headContent.map((item) => {
+          {headContent.map((item, index) => {
             let text = row[item.id];
-            return <td>{text}</td>;
+            return <td key={index}>{text}</td>;
           })}
         </tr>
       ))
     ) : (
-      <tr>
+      <tr key="">
         <td>NO DATA ON TABLE</td>
       </tr>
     );
   };
 
   const _renderTableHead = () => {
-    return headContent.map((row) => {
-      return <th>{row.label}</th>;
+    return headContent.map((row, index) => {
+      return <th key={index}>{row.label}</th>;
     });
   };
 

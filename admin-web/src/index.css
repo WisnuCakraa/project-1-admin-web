@@ -1,13 +1,10 @@
 body {
   position: relative;
   overflow-x: hidden;
+  margin: 0;
   background: #f7f7fc;
+  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
-}
-
-a:hover {
-  color: white;
-  text-decoration: none;
 }
 
 body,

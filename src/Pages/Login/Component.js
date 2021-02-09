@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Field, Form } from "redux-form";
 import LoginImage from "../../Assets/Galery/undraw_dev_focus.svg";
+import { useForm } from "react-hook-form";
 import { ROUTES } from "../../configs";
 import "./Style.css";
 
-export default function Component(props) {
-  const { handleSubmit } = props;
+export default function Component() {
   const [alert, setAlert] = useState("");
+  const { register, handleSubmit, errors } = useForm();
 
   const doLogin = (inputProps) => {
     const { username, password } = inputProps;
@@ -59,36 +59,31 @@ export default function Component(props) {
                   </p>
                 </div>
                 {alert === "show" ? _renderAlert() : <></>}
-                <Form onSubmit={handleSubmit(doLogin)}>
+                <form onSubmit={handleSubmit(doLogin)}>
                   <div className="form-group">
                     <label htmlFor="text">Username : </label>
-                    <Field
-                      name="username"
-                      component="input"
-                      maxLength="35"
-                      pattern="[A-Za-z]+"
+                    <input
                       className="form-control"
-                      type="text"
-                      placeholder="Username"
-                      required
+                      ref={register({ required: true })}
+                      name="username"
                     />
+                    {errors.username && (
+                      <p className="error mt-1">username harus diisi</p>
+                    )}
                   </div>
                   <div className="form-group">
                     <label htmlFor="text">Password : </label>
-                    <Field
-                      name="password"
-                      component="input"
-                      maxLength="35"
-                      pattern="[A-Za-z]+"
+                    <input
                       className="form-control"
-                      type="password"
-                      placeholder="Password"
-                      required
+                      ref={register({ required: true })}
+                      name="password"
                     />
+                    {errors.password && (
+                      <p className="error mt-1">password harus diisi</p>
+                    )}
                   </div>
-
                   <button className="btn btn-block btn-primary">Log in</button>
-                </Form>
+                </form>
               </div>
             </div>
           </div>

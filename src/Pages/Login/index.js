@@ -1,14 +1,7 @@
-import { reduxForm } from "redux-form";
 import { changeUserSession } from "../../Actions/user";
 import { withRouter } from "react-router";
-import Login from "./Component";
+import Component from "./Component";
 import { connect } from "react-redux";
-
-let Component = Login;
-
-Component = reduxForm({
-  form: "login",
-})(Login);
 
 export function mapDispatchToProps() {
   return {

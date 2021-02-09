@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
-import MainContent from "../../Components/MainContent";
-// import Card from "../../Components/Elements/Card";
-import { dataFilter } from "../../Components/Utility/DummyData/dummy";
-import Table from "../../Components/Elements/Table";
-import { getListProductJson } from "../../Components/Utility/DummyData";
-import "./Style.css";
 import { ROUTES } from "../../configs";
+import MainContent from "../../Components/MainContent";
+import { dataFilter } from "../../Utility/DummyData/dummy";
+import { getListProductJson } from "../../Utility/DummyData";
+import Table from "../../Components/Elements/Table";
+import {
+  nextPaging,
+  pagination,
+  paging,
+  previousPaging,
+  totalPages,
+} from "../../Components/Elements/Pagination";
+import "./Style.css";
 
 export default function Dashboard() {
   const data = getListProductJson.response.data;
@@ -105,6 +110,7 @@ export default function Dashboard() {
         </div>
         <Table bodyContent={renderList} headContent={_renderHeaderTable} />
       </div>
+      <div className="d-flex justify-content-end">{pagination(paging)}</div>
     </MainContent>
   );
 }

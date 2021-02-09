@@ -24,3 +24,12 @@ h2 {
     padding: 11rem 0;
   }
 }
+
+.error {
+  color: #bf1650;
+}
+
+.error::before {
+  display: inline;
+  content: "⚠ ";
+}
